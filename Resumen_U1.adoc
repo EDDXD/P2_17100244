@@ -100,7 +100,7 @@ estas son:
 - %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)
 
 * **Selectores**
-- Tag
+- Tag 
 - id
 - clase
 - relacion(espacio, +, >, ~)

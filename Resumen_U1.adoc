@@ -98,3 +98,22 @@ estas son:
 - ch(zero width) ->ancho del cero
 - rem(root M) -> tamaño de fuente raíz
 - %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)
+
+* **Selectores**
+- Tag
+- id
+- clase
+- relacion(espacio, +, >, ~)
+
+* **PseudoSelectores**
+- PseudoClases
+- Pseudo elementos
+(4 ejemplos)
+
+
+* **Cascada**
+-niveles de cascada
+
+
+* **Especificidad**
+-¿cómo se calcula?

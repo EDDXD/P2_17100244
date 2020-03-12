@@ -52,4 +52,20 @@ Dentro de la primera unidad se habló de:
  * **border-box: ** con este elemento le diremos al navegador que los valores que
  se especifican se tomen en cuenta para dimensionar los objetos.
 
- 
+**Flujo de documento**
+
+ El flujo es lo que indica como están colocando los componentes de la página,
+ basándose en cómo aparecen en el HTML.
+ Por ejemplo; la etiqueta que aparezca primero será la que se mostrará también
+ en la página como primer lugar.
+
+ sin embargo hay excepciones si se utilizan propiedades de posición, ya que con ellos
+ se puede intervenir con el flujo del documento y mostrarse en una posición diferente.
+
+**Tipos de posicionamiento**
+
+ static: será estático en como se especifica.
+ relative: en relación a su posición original.
+ absolute: se posiciona en relación al contenedor padre.
+ fixed: lo dejará fijo y no se moverá.
+ sticky: al inicio será relativo su posicionamiento, pero al mover la página se cambiará a fixed.

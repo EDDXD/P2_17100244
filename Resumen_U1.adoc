@@ -100,19 +100,77 @@ estas son:
 - %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)
 
 * **Selectores**
-- Tag: Los elementos de etiqueta seleccionará aquellos que coincidan 
-- id
-- clase
-- relacion(espacio, +, >, ~)
+- Tag: Los elementos de etiqueta seleccionará aquellos que coincidan con el
+nombre. por ejemplo -> p{ } tomará todos los elementos párrafo que estén dentro
+de nuestro documento.
+- id: Con esto, se indica a un solo elemento las propiedades, ya que sólo existirá
+un solo id dentro de nuestro html.
+- clase: Los elementos que tengan la clase especificada solamente serán aquellos
+que tengan especificada tal clase.
+- relacion(espacio, +, >, ~): Estos nos sirven para separar e indicar aquellos
+elementos que necesitemos, mediante el css.
+
+ espacio: indicará los elementos que desciendan de el que está a la izquierda.
+ +: Aquellos elementos que sean hermanos de el elemento que está a la izquierda del signo.
+ -:
+ >: Aquellos elementos que sean primeros hijos de un contenedor padre.
+ ~:  Inidicará todas las etiquetas siguientes.
 
 * **PseudoSelectores**
-- PseudoClases
-- Pseudo elementos
-(4 ejemplos)
+
+ Los pseudo selectores de atributos, son aquellos selectores que no son un selector.
+ son divididos en dos:
+
+  1. Pseudo Elementos y 2. Pseudo clases.
+
+- **PseudoClases:**  Son definidas por le navegador y son palabras clave que se
+especifica como un estado especial sobre un elemento seleccionado. ejemplos:
+
+ :hover aplicará un estilo cuando el usuario ponga su mouse sobre el elemento especificado
+por el selector.
+
+ :active represent un elemento que el usuario activa, como botones, sin embargo será
+ ignorado si hay otras pseudoclases posteriores, esto se rige por el orden LVHA(Link, Visited, Hover, Active).
+
+ :disabled indica que cualquier elemento con esta pseudoclase será ignorado. puede aplicarse
+ para pasar del estado activo a desactivado.
+
+ :fullscreen será un elemento que se muestra cuando el navegador está única y exclusivamente en modo de pantalla completa.
+
+ :checked se utilizará para cualquier radio input, checkbox u option, y funcionará para marcar un elemento que esté activado.
+
+- **Pseudo elementos:**
+
+ ::first-letter tomará la primera letra del texto donde se utilice.
+
+ ::first-line tomará la primera línea del texto donde se utilice.
+
+ ::before será aquello que hará el elemento "antes" de.
+
+ ::after será aquello que hará el elemento "después" de.
 
 
 * **Cascada**
--niveles de cascada
+
+ El modelo de cascada, es la forma o reglas que indicarán cuál propiedad se mostrará
+ al ponerla dentro de nuestro código.
+
+ Este modelo de cascada indica que, siempre prevalecerá la última regla definida, la cuál mezclará y sobreescribirá
+ cualquier anterior.
+
+Por ejemplo:
+
+[source,css]
+div {
+  color: red;
+  padding: 8px;
+ }
+div {
+  color: blue;
+  background-color:grey;
+ }
+
+Lo que hará en lo anterior será una unión de ambos, tomando como principal la última propiedad definida.
 
 
 * **Especificidad**

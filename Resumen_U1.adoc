@@ -72,3 +72,30 @@ El posicionamiento, sirve para cambiar el flujo del documento, ya que con estos 
  absolute: se posiciona en relación al contenedor padre.
  fixed: lo dejará fijo y no se moverá.
  sticky: al inicio será relativo su posicionamiento, pero al mover la página se cambiará a fixed.
+
+**Unidades de medida**
+
+Las unidades de medida son aquellas que harán grandes o pequeños nuestros elementos
+y dependiendo de cuáles utilicemos, se adaptarán a diferentes pantallas.
+
+* **Unidades absolutas:** son medidas que no cambian, tampoco dependerán de ningún otro factor
+estas son:
+  - in(pulgadas)
+  - cm(centimetros)
+  - pc(picas)
+  - mm(milímetros)
+  - pt(puntos)
+  - px(pixeles)
+  - Q(cuartos de mm)
+
+* **Unidades relativas: **
+
+Las unidades relativas son aquellas que se acomodan al tamaño de la resolución
+de la pantalla y demás factores.
+estas son:
+
+- em(M) -> Tamaño de la fuente del navegador
+- ex(X) -> Tamaño de la mitad de la fuente del navegador
+- ch(zero width) ->ancho del cero
+- rem(root M) -> tamaño de fuente raíz
+- %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)

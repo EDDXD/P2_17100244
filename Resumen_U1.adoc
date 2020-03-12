@@ -100,7 +100,7 @@ estas son:
 - %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)
 
 * **Selectores**
-- Tag 
+- Tag: Los elementos de etiqueta seleccionará aquellos que coincidan 
 - id
 - clase
 - relacion(espacio, +, >, ~)

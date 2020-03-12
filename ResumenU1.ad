@@ -1,6 +1,28 @@
 
 
-== Resumen Unidad 1
-=== 17100244 - Jorge Eduardo Madrigal García
+=== Resumen Unidad 1
+==== 17100244 - Jorge Eduardo Madrigal García
 
-hola
+Dentro de la primera unidad se habló de:
+
+
+**Modelo de Caja - (Box Model)**
+
+ El BoxModel son propiedades que definen el espaciado
+ dentro de un elemento, el cuál se encuentra dentro de
+ una página web, los cuáles terminan siendo cajas rectangulares.
+
+ Las propiedades utilizadas dentro del Box-Model son:
+
+ * **Content-Box:** Cuando es declarada esta propiedad, el tamaño del
+   contenido se puede definir con las propiedades de width,
+   min-width, max-width, height, min-height y max-height.
+ * **Width:** Ancho de la caja.
+ * **Height:** Altura de la caja
+ * **Padding:** Relleno que hay entre el contenido y el bloque.
+ * **Border:** Grosor y estilo del borde que rodea el contenido(Dentro de la caja).
+ * **Margin:** Espacio del borde interior y exterior del elemento.
+ * **Outline:** La propiedad Outline sirve para agregar un borde extra y así
+    brindar una mejor visualización del elemento.
+
+ 

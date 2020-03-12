@@ -24,3 +24,5 @@ Dentro de la primera unidad se habló de:
  * **Margin:** Espacio del borde interior y exterior del elemento.
  * **Outline:** La propiedad Outline sirve para agregar un borde extra y así
     brindar una mejor visualización del elemento.
+
+ Relleno

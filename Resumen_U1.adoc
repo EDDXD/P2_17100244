@@ -25,4 +25,16 @@ Dentro de la primera unidad se habló de:
  * **Outline:** La propiedad Outline sirve para agregar un borde extra y así
     brindar una mejor visualización del elemento.
 
- Relleno
+**Propiedad Display**
+
+ Las cajas que se generan con cada elemento dentro del html
+ pueden o no mostrarse de cierta forma, es decir, podemos modificar como se
+ mostrará el elemento con esta propiedad, los elementos utilizados en ella son:
+
+ * block: Aquí mostrará el elemento dentro del flujo del documento.
+ * inline: Con este elemento, se hará que las cajas estén en la misma línea con
+ respecto a otros con la misma propiedad.
+ * inline-box: Este elemento hará que la caja se mantenga en el flujo del
+ documento y si cuenta con texto hará que lo rodeen.
+ * none: Es utilizada habitualmente para esconder un elemento, sin embargo que
+ este siga ocupando el espacio donde se encuentra.

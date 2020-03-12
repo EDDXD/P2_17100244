@@ -38,3 +38,18 @@ Dentro de la primera unidad se habló de:
  documento y si cuenta con texto hará que lo rodeen.
  * none: Es utilizada habitualmente para esconder un elemento, sin embargo que
  este siga ocupando el espacio donde se encuentra.
+
+**Box Sizing**
+
+ La propiedad de box-sizing dentro de un elemento, nos dará la opción para
+ incluir paddings y borders en un elemento con altura y anchura total, además de
+ mostrar correctamente en el tamaño de los elementos especificados dentro de
+ nuestro html.
+
+ * **content-box: ** es la propiedad por defecto que tienen box-sizing, sin embargo los
+ bordes se añadirán a el ancho final desplegado.
+
+ * **border-box: ** con este elemento le diremos al navegador que los valores que
+ se especifican se tomen en cuenta para dimensionar los objetos.
+
+ 

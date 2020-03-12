@@ -89,7 +89,6 @@ estas son:
   - Q(cuartos de mm)
 
 * **Unidades relativas: **
-
 Las unidades relativas son aquellas que se acomodan al tamaño de la resolución
 de la pantalla y demás factores.
 estas son:

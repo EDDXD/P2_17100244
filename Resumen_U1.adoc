@@ -64,6 +64,9 @@ Dentro de la primera unidad se habló de:
 
 **Tipos de posicionamiento**
 
+El posicionamiento, sirve para cambiar el flujo del documento, ya que con estos se puede o
+ no reservar el espacio del elemento.
+
  static: será estático en como se especifica.
  relative: en relación a su posición original.
  absolute: se posiciona en relación al contenedor padre.

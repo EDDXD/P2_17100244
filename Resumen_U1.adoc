@@ -171,6 +171,8 @@ div {
  }
 
 Lo que hará en lo anterior será una unión de ambos, tomando como principal la última propiedad definida.
+ignorando así el color rojo y poniendo el color azul, con las demás propiedades activas.
+
 
 
 * **Especificidad**

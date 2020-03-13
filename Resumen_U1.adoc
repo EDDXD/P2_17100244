@@ -173,7 +173,65 @@ div {
 Lo que hará en lo anterior será una unión de ambos, tomando como principal la última propiedad definida.
 ignorando así el color rojo y poniendo el color azul, con las demás propiedades activas.
 
+ esto va de la mano con la importancia, ya que existen varios tipos de hojas de estilos, los cuáles tomará el navegador dependiendo
+ de su valor.
+
+importancia
+|===
+|Importancia| tipo de hoja| descripción
+|3
+|Navegador
+|son aquellos estilos que aplica el navegador por defecto.
+|2
+|Estilos de usuario
+|son las hojas de estilos que el usuario agrega.
+|1
+|CSS de autor
+|son los estilos que indica dentro de la página el autor del sitio web.
+|===
+
+Existe también una excepción a esto, se trata de una regla llamada **!important**. Esta regla lo que hará es ignorar
+cualquier otra parecida y se aplicará ella, pero si una propiedad con !important está declarada en el nivel 2 y nivel 1, tomará como prioridad
+aquella del nivel 2.
 
 
 * **Especificidad**
--¿cómo se calcula?
+ La especificidad es la importancia que tenga una declaración css. Cuando hay varios elementos
+ con la misma especificidad, se tomará el último declarado en el css.
+
+ El orden de importancia es el siguiente de menor a mayor especificidad(peso/importancia)
+ - selectores de título y pseudo-Elementos
+ - selectores de clase, atributos y pseudo-clases
+ - selectores de ID.
+
+
+|===
+|1000|100|10|1
+|===
+
+* elementos o pseudo elemento: valor 1
+* clases, pseudo-clases o atributos: valor 10
+* id: valor 100
+* elementos declarados desde style en el html: valor 1000
+
+Con esto, podremos hacer una suma o determinar cuál propiedad se aplicará
+en nuestro código. Entonces, su valor de importancia se determinará por la suma de cada elemento; por eso se ordenan de mayor a menor, para
+poder calcularlo mejor.
+
+
+Por ejemplo:
+[source,css]
+#nav .selected a:hover{
+color: blue;
+}
+
+El código anterior tendrá un peso de:
+|===
+|0|1|2|1
+|===
+
+121 tal y como se muestra en la tabla, ya que presenta una clase + pseudoclase
+(.selected :hover = 10+10 -> 20), un id(#nav = 100) y un elemento(a = 1)
+
+sin embargo, como se explicó en el bloque anterior, si se agrega una regla **!important** a nuestro código, el navegador tomará
+como preferencia tal grupo de elementos por encima de los demás.

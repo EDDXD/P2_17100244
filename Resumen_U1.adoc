@@ -99,7 +99,8 @@ estas son:
 - rem(root M) -> tamaño de fuente raíz
 - %(porcentaje) -> relativo a herencia(de acuerdo al contenedor)
 
-* **Selectores**
+**Selectores**
+
 - Tag: Los elementos de etiqueta seleccionará aquellos que coincidan con el
 nombre. por ejemplo -> p{ } tomará todos los elementos párrafo que estén dentro
 de nuestro documento.
@@ -116,7 +117,7 @@ elementos que necesitemos, mediante el css.
  >: Aquellos elementos que sean primeros hijos de un contenedor padre.
  ~:  Inidicará todas las etiquetas siguientes.
 
-* **PseudoSelectores**
+**PseudoSelectores**
 
  Los pseudo selectores de atributos, son aquellos selectores que no son un selector.
  son divididos en dos:
@@ -150,7 +151,7 @@ por el selector.
  ::after será aquello que hará el elemento "después" de.
 
 
-* **Cascada**
+**Cascada**
 
  El modelo de cascada, es la forma o reglas que indicarán cuál propiedad se mostrará
  al ponerla dentro de nuestro código.
@@ -176,7 +177,7 @@ ignorando así el color rojo y poniendo el color azul, con las demás propiedade
  esto va de la mano con la importancia, ya que existen varios tipos de hojas de estilos, los cuáles tomará el navegador dependiendo
  de su valor.
 
-importancia
+**importancia, siendo el número 1 el mayor.**
 |===
 |Importancia| tipo de hoja| descripción
 |3
@@ -195,7 +196,8 @@ cualquier otra parecida y se aplicará ella, pero si una propiedad con !importan
 aquella del nivel 2.
 
 
-* **Especificidad**
+**Especificidad**
+
  La especificidad es la importancia que tenga una declaración css. Cuando hay varios elementos
  con la misma especificidad, se tomará el último declarado en el css.
 

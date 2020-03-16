@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- JavaScript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!--Decirle al navegador que está optimizado para móviles-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- iconos -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <meta charset="UTF-8">
+
+	<title>Serie Fibonacci Do-While</title>
+	<script type="text/javascript">
+			function mandarvalor() {
+			    var valorFinal = document.getElementById("valor").value;
+			    document.getElementById("resultado").innerHTML = fibonacci (valorFinal);
+			}
+
+			var serie = [0];
+			var anterior = 1;
+			var actual = 0;
+			var suma = 0;
+			 
+			function fibonacci (valorFinal) {
+			  
+			   do {
+			     suma = anterior + actual;
+			     anterior = actual;
+			     actual = suma;
+			     serie.push(suma);
+			    }
+			    while (suma < valorFinal)
+			    	
+			    return (serie);
+			}
+	</script>
+</head>
+<body>
+	<div class="container"> 
+
+		<h3 class="strong">Serie Fibonacci en JavaScript usando Do-While </h3>
+			<p>Ingresa el valor máximo para la serie:</p>
+		<input type="number" id="valor" value="0">
+
+		<button onclick="mandarvalor()">Inicia</button>
+		<p id="resultado"></p>
+
+	</div>
+
+</body>
+</html>
